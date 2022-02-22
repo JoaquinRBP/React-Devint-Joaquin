@@ -26,7 +26,10 @@ export const useFetch = (url)=>{
                 else{
                     console.log('Setstate no se llamó');
                 }
-            },2000);
+            });
+        })
+        .catch(()=>{
+            setstate({data:null, loading:false, error:'No se puedo generar la info'})
         })
     },[url]);
     return state;
