@@ -1,0 +1,1 @@
+Sección orientada a la explicación teorica de Redux
