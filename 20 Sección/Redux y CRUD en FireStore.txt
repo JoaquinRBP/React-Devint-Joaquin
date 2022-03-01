@@ -1,0 +1,3 @@
+Modificaciones sobre journal-app de la sección 17
+	-Carpetas auth, actions, journal, notes, routers, hooks,store,styles y types modificadas
+	-Creación o modiciación de archivos en las carpetas actions, helpers y reducers
