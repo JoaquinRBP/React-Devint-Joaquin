@@ -1,0 +1,2 @@
+Apartado de Test y modificaciones sobre firebase,ENV para test y development, setupTests y Helpers
+Contenido total excede el tiempo por sección asignado al día, se realizó la primera parte 02/03/2022

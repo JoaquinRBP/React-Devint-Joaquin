@@ -1,0 +1,22 @@
+import { types } from "../../types/types";
+describe('Pruebas sobre Types', () => {
+    test('Debe de ser iguales', () => {
+        expect(types).toEqual({
+            login: '[Auth] Login',
+            logout: '[Auth] Logout',
+            uiSetError: '[UI] Set Error',
+            uiRemoveError: '[UI] Remove Error',
+            uiStartLoading: '[UI] Start Loading',
+            uiFinishLoading: '[UI] Finish Loading',
+            notesAddNew: '[Notes] Add New',
+            notesActive: '[Notes] Set active note',
+            notesLoad: '[Notes] Load notes',
+            notesUpdate: '[Notes] Update notes save',
+            notesFileUrl: '[Notes] Update image URL',
+            notesDelete: '[Notes] Delete notes',
+            notesLogoutCleaning: '[Notes] Logout Cleaning'
+        
+        }); 
+    })
+    
+})
