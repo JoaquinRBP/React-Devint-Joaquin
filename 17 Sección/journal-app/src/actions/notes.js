@@ -13,9 +13,14 @@ export const startNewNote = ()=>{
             body:'',
             date: new Date().getTime(),
         };
-        const doc = await db.collection(`${uid}/journal/notes`).add(newNote);
-        dispatch(activeNote(doc.id,newNote));
-        dispatch(addNewNote(doc.id, newNote));
+        try{
+            const doc = await db.collection(`${uid}/journal/notes`).add(newNote);
+            dispatch(activeNote(doc.id,newNote));
+            dispatch(addNewNote(doc.id, newNote));
+        }
+        catch(error){
+            console.log(error);
+        }
     }
 }
 export const activeNote = (id, note)=>({
@@ -72,9 +77,9 @@ export const startUploading = (file)=>{
             title: 'Uploading',
             text: 'Please wait',
             allowOutsideClick: false,
-            onBeforeOpen: ()=>{
-                Swal.loading()
-            },
+            // onBeforeOpen: ()=>{
+            //     Swal.loading()
+            // },
         })
         const fileUrl = await fileUpload(file);
         activeNote.url = fileUrl;

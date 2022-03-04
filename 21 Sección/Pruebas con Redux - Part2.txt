@@ -1,0 +1,2 @@
+Apartado de Test y modificaciones sobre actions,components/auth y setupTests
+Sección acabada
